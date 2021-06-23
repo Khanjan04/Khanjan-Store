@@ -9,13 +9,14 @@ import productRoute from './routes/productRoute';
 
 dotenv.config();
 
-const mongodbUrl = config.MONGODB_URL;
+const mongodbUrl = config.MONGODB_URI;
 mongoose.connect(mongodbUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
+}).then( () => {
+    console.log('Connected to database ')
 }).catch(error => console.log(error.reason));
-
 
 const app = express();
 app.use(bodyParser.json());
