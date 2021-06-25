@@ -9,10 +9,10 @@
   },
   "scripts": {
     "frontend-install": "npm install --prefix frontend",
-    "start": "nodemon --watch backend --exec babel-node server.js",
+    "dev": "nodemon --watch backend --exec babel-node server.js",
     "server": "nodemon --watch backend --exec babel-node server.js",
     "frontend": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "start": "concurrently \"npm run server\" \"npm run frontend\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "",
