@@ -25,8 +25,6 @@ app.use(bodyParser.json());
 app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
 
-app.get('/', (req, res) => { res.send('Hello from Express!')});
-
 app.get("/api/products/:id", (req, res) => {
     const productId = req.params.id;
     const product = data.products.find(x => x._id === productId);
