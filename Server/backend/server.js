@@ -34,6 +34,10 @@ app.get("/api/products/:id", (req, res) => {
         res.status(404).send({ msg: "Product Not Found." });
 });
 
+app.get("/api/users", (req, res) => {
+    res.send("Users can't be shown 😅");
+})
+
 app.get("/api/products", (req, res) => {
     res.send(data.products);
 });
