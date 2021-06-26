@@ -7,6 +7,8 @@ import bodyParser from 'body-parser';
 import userRoute from './routes/userRoute';
 import productRoute from './routes/productRoute';
 
+const path = require('path');
+
 dotenv.config();
 
 const mongodbUrl = config.MONGODB_URI;
@@ -22,8 +24,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
-
-app.get('/', (req, res) => { res.send('Hello from Express!')});
 
 app.get("/api/products/:id", (req, res) => {
     const productId = req.params.id;
@@ -41,5 +41,15 @@ app.get("/api/users", (req, res) => {
 app.get("/api/products", (req, res) => {
     res.send(data.products);
 });
+
+// Serve static assets if in production
+if (process.env.NODE_ENV === 'production') {
+    //Set a static folder
+    app.use(express.static('frontend/build'));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+    });
+}
 
 app.listen(process.env.PORT || 5000, () => { console.log("Server started at http://localhost:5000") });

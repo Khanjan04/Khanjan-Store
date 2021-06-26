@@ -1,6 +1,5 @@
 {
   "name": "frontend",
-  "proxy": "http://192.168.43.117:5000",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +9,7 @@
     "axios": "^0.20.0",
     "bootstrap": "^4.6.0",
     "carousel": "0.0.3",
+    "concurrently": "^6.2.0",
     "init": "^0.1.2",
     "js-cookie": "^2.2.1",
     "react": "^16.13.1",
