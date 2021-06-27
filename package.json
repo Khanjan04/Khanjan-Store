@@ -2,14 +2,13 @@
   "name": "khanjan",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "engines": {
     "node": "12.19.0",
     "npm": "6.14.8"
   },
   "scripts": {
     "frontend-install": "npm install --prefix frontend",
-    "dev": "nodemon --watch backend --exec babel-node server.js",
     "server": "nodemon --watch backend --exec babel-node server.js",
     "frontend": "npm start --prefix frontend",
     "start": "concurrently \"npm run server\" \"npm run frontend\"",
