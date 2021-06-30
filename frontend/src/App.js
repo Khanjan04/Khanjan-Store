@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './components/Navbar';
 import { useSelector } from 'react-redux';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
@@ -26,28 +27,6 @@ function App() {
                 <title>Khanjan Store | Home</title>
             </Helmet>
                 <header>
-                    <div className="nav">
-                        <div className="nav_left">
-                            <div className="nav_logo">
-                                <button className="option">
-                                    &#9776;
-                                </button>
-                                <Link to="/">Khanjan Store</Link>
-                            </div>
-                        </div>
-                        <div className="nav_right">
-                            <div className="header-links">
-                                <a href="cart">Cart</a>
-                                {
-                                    userInfo ? <Link to="/profile">{userInfo.name}</Link> :
-                                        <Link to="/signin">Sign In</Link>
-                                }
-                            </div>
-                        </div>
-                        <div className="nav_fill">
-                            
-                        </div>
-                    </div>
                     <nav id="nav-main">
                         <div className="nav_cat">
                             <ul>
@@ -79,6 +58,7 @@ function App() {
                         </div>
                     </nav>
                 </header>
+                <Navbar></Navbar>
                 <main className="main">
                     <div className="content">
                         <Route path="/products" component={ProductsScreen} />
