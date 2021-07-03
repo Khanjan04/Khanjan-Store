@@ -47,14 +47,14 @@ function HomeScreen(props) {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="images/c2.png"
+                        src="images/car2.png"
                         alt="Second slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="images/c3.png"
+                        src="images/car1.png"
                         alt="Third slide"
                         />
                     </Carousel.Item>
