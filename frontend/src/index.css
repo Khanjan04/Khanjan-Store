@@ -337,7 +337,8 @@ hr.solid {
   list-style-type: none;
   font-size: 25px;
   align-self: center;
-  margin-left: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .details-action li {
