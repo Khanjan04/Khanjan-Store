@@ -175,6 +175,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  font-size: 17px;
   height: 45px;
 }
 #top-footer a {
@@ -219,7 +220,7 @@ hr.solid {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-size: larger;
+  font-size: 18px;
   height: 50px;
 }
 .middle-footer a {
@@ -244,7 +245,7 @@ hr.solid {
   justify-content: center;
   flex-wrap: wrap;
   padding-right: 4rem;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 .products li {
   list-style-type: none;
@@ -252,9 +253,16 @@ hr.solid {
   margin-bottom: 1rem;
   margin-left: 7rem;
   margin-right: 7rem;
-  height: 45rem;
+  height: 46rem;
   justify-content: center;
   border-bottom: 0.005rem #000000 solid;
+}
+.products li a {
+  color: #000000;
+  text-decoration: none;
+}
+.products li a:hover {
+  color: #fa7900;
 }
 .product {
   display: flex;
@@ -295,12 +303,12 @@ hr.solid {
 .details-image {
   flex: content;
   padding-left: 4rem;
+  width: 350px;
+  height: 350px;
 }
 .details-image img {
   margin-top: 18px;
   border: 0.4rem #000000 solid;
-  width: 120%;
-  height: 120%;
 }
 .details-info {
   flex: 0.75;
