@@ -27,6 +27,7 @@ function App() {
                 <title>Khanjan Store | Home</title>
             </Helmet>
                 <header>
+                    <Navbar></Navbar>
                     <nav id="nav-main">
                         <div className="nav_cat">
                             <ul>
@@ -58,7 +59,6 @@ function App() {
                         </div>
                     </nav>
                 </header>
-                <Navbar></Navbar>
                 <main className="main">
                     <div className="content">
                         <Route path="/products" component={ProductsScreen} />
