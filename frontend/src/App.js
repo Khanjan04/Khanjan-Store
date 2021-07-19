@@ -68,6 +68,7 @@ function App() {
                 </header>
                 <main className="main">
                     <div className="content">
+                        <Route path="/" exact={true} component={HomeScreen} />
                         <Route path="/products" component={ProductsScreen} />
                         <Route path="/shipping" component={ShippingScreen} />
                         <Route path="/payment" component={PaymentScreen} />
@@ -76,7 +77,6 @@ function App() {
                         <Route path="/register" component={RegisterScreen} />
                         <Route path="/product/:id" component={ProductScreen} />
                         <Route path="/cart/:id?" component={CartScreen} />
-                        <Route path="/" exact={true} component={HomeScreen} />
                         <Route path="/categories/Pant" component={PantCategoryScreen} />
                         <Route path="/categories/Shirt" component={ShirtCategoryScreen} />
                         <Route path="/categories/Frock" component={FrockCategoryScreen} />
