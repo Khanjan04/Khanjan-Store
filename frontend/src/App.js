@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import { useSelector } from 'react-redux';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
@@ -14,6 +14,13 @@ import SigninScreen from './screens/SigninScreen';
 import ShippingScreen from './screens/ShippingScreen';
 import PaymentScreen from './screens/PaymentScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
+import PantCategoryScreen from './screens/categories/PantCategoryScreen';
+import ShirtCategoryScreen from './screens/categories/ShirtCategoryScreen';
+import TShirtCategoryScreen from './screens/categories/TShirtCategoryScreen';
+import FrockCategoryScreen from './screens/categories/FrockCategoryScreen';
+import BlazzerCategoryScreen from './screens/categories/BlazzerCategoryScreen';
+import CapriCategoryScreen from './screens/categories/CapriCategoryScreen';
+import HoodieCategoryScreen from './screens/categories/HoodieCategoryScreen';
 
 function App() {
 
@@ -35,25 +42,25 @@ function App() {
                                     <div className="category" href="/">Shopping Categories :- </div>
                                 </li>
                                 <li>
-                                    <a href="/">Pant</a>
+                                    <a href="/categories/Pant">Pant</a>
                                 </li>
                                 <li>
-                                    <a href="/">Shirt</a>
+                                    <a href="/categories/Shirt">Shirt</a>
                                 </li>
                                 <li>
-                                    <a href="/">Frock</a>
+                                    <a href="/categories/Frock">Frock</a>
                                 </li>
                                 <li>
-                                    <a href="/">T-Shirt</a>
+                                    <a href="/categories/T-Shirt">T-Shirt</a>
                                 </li>
                                 <li>
-                                    <a href="/">Blazzer</a>
+                                    <a href="/categories/Blazzer">Blazzer</a>
                                 </li>
                                 <li>
-                                    <a href="/">Capri</a>
+                                    <a href="/categories/Capri">Capri</a>
                                 </li>
                                 <li>
-                                    <a href="/">Hoodie</a>
+                                    <a href="/categories/Hoodie">Hoodie</a>
                                 </li>
                             </ul>
                         </div>
@@ -70,6 +77,13 @@ function App() {
                         <Route path="/product/:id" component={ProductScreen} />
                         <Route path="/cart/:id?" component={CartScreen} />
                         <Route path="/" exact={true} component={HomeScreen} />
+                        <Route path="/categories/Pant" component={PantCategoryScreen} />
+                        <Route path="/categories/Shirt" component={ShirtCategoryScreen} />
+                        <Route path="/categories/Frock" component={FrockCategoryScreen} />
+                        <Route path="/categories/T-Shirt" component={TShirtCategoryScreen} />
+                        <Route path="/categories/Blazzer" component={BlazzerCategoryScreen} />
+                        <Route path="/categories/Capri" component={CapriCategoryScreen} />
+                        <Route path="/categories/Hoodie" component={HoodieCategoryScreen} />
                     </div>
                 </main>
                 <footer>
