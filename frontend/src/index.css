@@ -177,6 +177,7 @@ footer {
   font-weight: bold;
   font-size: 17px;
   height: 45px;
+  margin-top: 4rem;
 }
 #top-footer a {
   color: #ffffff;
@@ -234,7 +235,7 @@ hr.solid {
 
 /* Home Screen */
 .carousel .slide {
-  margin-top: 7rem;
+  margin-top: 8rem;
   margin-right: 2rem;
   margin-left: 2rem;
 }
@@ -245,7 +246,7 @@ hr.solid {
   justify-content: center;
   flex-wrap: wrap;
   padding-right: 4rem;
-  padding-top: 20px;
+  padding-top: 5rem;
 }
 .products li {
   list-style-type: none;
