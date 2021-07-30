@@ -85,11 +85,33 @@ header {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
-@media only screen and (max-width: 460px) {
+
+@media only screen and (max-width: 420px) {
+  .connect {
+    font-size: 0rem;
+    color: #ffffff;
+    text-decoration: underline 2px;
+  }
+
+  .middle-footer {
+    font-size: 2rem;
+  }
+
+  .middle-footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.5rem;
+  }
+
   .Navbar {
     height: 5rem;
   }
 
+  .details-info {
+    flex: 0.75;
+  }
+
+  /*
   .rightSide button {
     display: flex;
   }
@@ -126,6 +148,7 @@ header {
   .rightSide #hidden a:hover {
     color: #fa7900;
   }
+*/
 
   #nav-main {
     text-decoration: none;
@@ -133,6 +156,19 @@ header {
     text-align: center;
     margin-top: -18px;
     padding-bottom: -20px;
+  }
+
+  #nav-main ul {
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    margin-top: 66px;
+  }
+
+  #nav-main a {
+    color: #ffffff;
+    font-size: medium;
+    text-decoration: none;
   }
 }
 
@@ -150,19 +186,20 @@ header {
 #nav-main ul {
   text-decoration: none;
   position: relative;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
   margin-top: 66px;
 }
 #nav-main li {
   display: inline-block;
-  padding-right: 40px;
+  padding-right: 4rem;
   text-decoration: none;
 }
 .category {
   font-size: large;
 }
+
 .main {
   grid-area: main;
 }
@@ -188,21 +225,20 @@ footer {
 .middle-footer {
   background-color: #232f3e;
   display: flex;
-  color: #000000;
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  height: 50px;
+  height: 5rem;
 }
 .middle-footer li {
-  padding-left: 20px;
-  font-size: 15px;
+  padding-left: 2rem;
+  font-size: 1.2rem;
 }
 .middle-footer a {
   color: #ffffff;
 }
 .connect {
-  font-size: 22px;
+  font-size: 1.5rem;
   color: #ffffff;
   text-decoration: underline 2px;
 }
@@ -221,7 +257,7 @@ hr.solid {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.75rem;
   height: 50px;
 }
 .middle-footer a {
@@ -298,6 +334,8 @@ hr.solid {
 /* Product Details */
 .details {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   flex: content;
 }
@@ -313,7 +351,6 @@ hr.solid {
 }
 .details-info {
   flex: 0.75;
-  padding-left: 10rem;
 }
 .details-info ul {
   font-size: larger;
@@ -391,7 +428,7 @@ hr.solid {
   padding-right: 8rem;
 }
 .cart-list {
-  flex: 3 8 50rem;
+  flex: conten;
   padding-top: 35px;
 }
 .cart-action {

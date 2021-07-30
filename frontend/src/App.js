@@ -39,7 +39,7 @@ function App() {
                         <div className="nav_cat">
                             <ul>
                                 <li>
-                                    <div className="category" href="/">Shopping Categories :- </div>
+                                    <div className="category" href="/">Categories :- </div>
                                 </li>
                                 <li>
                                     <a href="/categories/Pant">Pant</a>
@@ -87,8 +87,8 @@ function App() {
                     </div>
                 </main>
                 <footer>
-                    <div className="middle-footer">
-                        <div className="connect" href="/">Connect with Us :-  </div>
+                    <nav className="middle-footer">
+                        <div className="connect" href="/">Connect with Us :- </div>
                         <li>
                             <a href="https://github.com/Khanjan04" target="_blank" without rel="noopener noreferrer">GitHub</a>
                         </li>
@@ -98,11 +98,11 @@ function App() {
                         <li>
                             <a href="https://www.codechef.com/users/khan_0411" target="_blank" without rel="noopener noreferrer">CodeChef</a>
                         </li>
-                    </div>
+                    </nav>
                     <hr class="solid"></hr>
-                    <div className="main-footer">
+                    <nav className="main-footer">
                         All rights are reserved. Made by Khanjan Varma.
-                    </div>
+                    </nav>
                 </footer>
             </div>
         </BrowserRouter>
