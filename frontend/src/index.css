@@ -342,8 +342,8 @@ hr.solid {
 .details-image {
   flex: content;
   padding-left: 4rem;
-  width: 350px;
-  height: 350px;
+  max-width: 350px;
+  max-height: 350px;
 }
 .details-image img {
   margin-top: 18px;
