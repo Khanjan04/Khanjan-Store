@@ -45,7 +45,7 @@ function ProductScreen(props) {
                                 largeImage: {
                                     src: product.image,
                                     width: 1200,
-                                    height: 1800
+                                    height: 1500
                                 }
                                 }} />
                             </div>
